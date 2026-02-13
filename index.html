@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For My Love 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="parallax-bg"></div>
+<div id="petal-container"></div>
+
+<!-- HERO SECTION -->
+<section id="hero" class="hero">
+
+
+  <div class="heart-wrapper" onclick="startLove()" role="button" aria-label="เริ่มเติมหัวใจ">
+    <div class="heart" id="heart"></div>
+    <div class="percent" id="percent">0%</div>
+  </div>
+
+  <div id="burst-container"></div>
+
+  <div class="loading-wrapper" aria-hidden="true">
+    <div class="loading-bar" id="loadingBar"></div>
+  </div>
+
+  <p class="hint">แตะหัวใจเพื่อเริ่ม 💗</p>
+</section>
+
+<!-- REVEAL SECTION -->
+<section id="reveal" class="reveal" aria-hidden="true">
+  <div class="card">
+    <img src="1/35246.jpg" alt="love">
+    <h2>Happy Valentine’s Day 💖🌷</h2>
+    <p id="typingText"></p>
+  </div>
+</section>
+
+<!-- AUDIO -->
+<audio id="heartbeat" src="1/silent-heartbeat.mp3" loop></audio>
+<audio id="popSound" src="/1/masterful-sword-strike-during-training.mp3"></audio>
+<audio id="loveSong" src="1/11.mp3" loop></audio>
+
+<div class="music-player" id="musicPlayer" aria-label="Music player" role="button" tabindex="0">
+  <div class="music-disc" id="musicDisc">🎵</div>
+  <div class="music-info">
+    <div class="song-title" id="songTitle">เพลงรัก - Three Man Down</div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
